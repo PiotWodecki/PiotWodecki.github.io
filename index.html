@@ -563,7 +563,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
           </div>
-
+		<p class="form-submit">
           <div class="col-lg-6">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-aos="fade-up">
               <div class="form-row">
@@ -589,9 +589,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><input name="submit" type="submit" value="send"></input></div>
             </form>
           </div>
+		  </p>
+		  <p class="form-submit col-lg-6">
+		  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+		  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+		   <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+		  
+		  </p>
 
         </div>
 
